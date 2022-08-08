@@ -10,11 +10,13 @@ sudo pip3 install virtualenv
 sudo apt-get install sqlite3
 ```
 ### AGREGAMOS EL ARCHIVO .env en la raiz con las siguientes variables
+```
 EMAIL_HOST=""
 EMAIL_HOST_USER=""
 EMAIL_HOST_PASSWORD=""
 BASE_URL="http://localhost:8000"
 TEST_API_KEY=""
+```
 
 ### Instalación de dependencias
 Activamos el virtualenv:
@@ -23,6 +25,7 @@ cd ~/Projects/testZebrands
 source venv/bin/activate
 ```
 
+Instalamos los requerimientos
 ```
 pip install -r requirements.txt
 ```
@@ -44,6 +47,7 @@ en el comando init.
 Para hacer un requests a endpoints como crear/editar/eliminar productos o crear/edtiar/eliminar usuarios  es necesario enviar el api_key generado en el comando
 init como parámetro get(api_key)
 
+```
 /api/v1/products/ -- POST para crear un producto (es necesario enviar api_key)
 /api/v1/products/consultedReport/ -- GET consultar reporte de mas veces visitado
 /api/v1/products/get/ -- GET obtener listado de producto
@@ -55,14 +59,18 @@ init como parámetro get(api_key)
 /api/v1/users/{id}/ -- GET ver un usuario(es necesario enviar api_key)
 /api/v1/users/{id}/deleteUser/ -- DELETE eliminar un usuario (es necesario enviar api_key)
 /api/v1/users/{id}/edit/ -- POST editar un usuario (es necesario enviar api_key)
-
+```
 
 
 ## TEST 
+```
 python manage.py test
+```
 
 ## CORREOS
 PARA ENVIAR CORREOS ES NECESARIO AÑADIR LOS VALORES A LAS VARIABLES DEL .ENV
+```
 EMAIL_HOST
 EMAIL_HOST_USER
 EMAIL_HOST_PASSWORD
+```
