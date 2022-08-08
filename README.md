@@ -24,7 +24,7 @@ TEST_API_KEY=""
 ```
 ### Creamos en entorno virtual
 ```
-python3 -m venv /venv
+python3 -m venv venv
 ```
 
 ### Instalación de dependencias
