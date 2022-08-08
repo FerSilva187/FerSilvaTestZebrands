@@ -9,6 +9,11 @@ sudo pip3 install virtualenv
 ```
 sudo apt-get install sqlite3
 ```
+### Nos vamos a la carpeta del proyecto
+
+```
+cd FerSilvaTestZebrands
+```
 ### AGREGAMOS EL ARCHIVO .env en la raiz con las siguientes variables
 ```
 EMAIL_HOST=""
@@ -19,7 +24,6 @@ TEST_API_KEY=""
 ```
 ### Creamos en entorno virtual
 ```
-cd ~/Projects/testZebrands
 python3 -m venv /venv
 ```
 
