@@ -17,11 +17,17 @@ EMAIL_HOST_PASSWORD=""
 BASE_URL="http://localhost:8000"
 TEST_API_KEY=""
 ```
-
-### Instalación de dependencias
-Activamos el virtualenv:
+### Creamos en entorno virtual
 ```
 cd ~/Projects/testZebrands
+python3 -m venv /venv
+```
+
+### Instalación de dependencias
+
+
+Activamos el virtualenv:
+```
 source venv/bin/activate
 ```
 
