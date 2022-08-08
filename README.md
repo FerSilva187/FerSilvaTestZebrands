@@ -5,7 +5,7 @@
 sudo apt-get install python3-pip
 sudo pip3 install virtualenv
 ```
-### Instalar sqllite
+### Instalar sqlite
 ```
 sudo apt-get install sqlite3
 ```
@@ -41,6 +41,7 @@ python manage.py runserver
 ```
 
 ## APIS
+### Documentación
 para ver la documentación de las apis podemos entrar a :```http://localhost:8000/api/v1/docs/ ``` es necesario hacer login con el usuario creado
 en el comando init.
 
